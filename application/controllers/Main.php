@@ -14,7 +14,7 @@ class Main extends CI_Controller {
 		$this->load->view('Home');
 	}
 	public function login(){
-    print_r($result=$this->Model->login());    
+    ($result=$this->Model->login());    
     if($result){
       redirect('Main/home');
       }else{
